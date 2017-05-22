@@ -66,9 +66,25 @@
 ?&gt;
 </pre>
         <?php $logged_in = true; ?>
-        <p><?php echo $logged_in ?></p>
-        <?php $my_name = 'Joseph Choi' ?>
-        <p><?php echo 'my name is ' + $my_name ?></p>
+        <p><?php print("Life is awesome -> $logged_in"); ?></p>
+        <?php $my_name = 'Joseph Choi'; ?>
+        <p><?php print("my name is $my_name"); ?></p>
+        <?php
+          $var1 = 12;
+          $var2 = 23;
+          $var3 = 34;
+          $sum = $var1 + $var2 + $var3;
+        ?>
+        <p>
+          <?php
+            print("
+              var1 = $var1 <br/>
+              var2 is definitely $var2 <br/>
+              var3 is most likely, $var3 <br/>
+              Their sum is $sum <br/>
+            ");
+          ?>
+        </p>
 			</div><!-- end sandbox -->
 
 			<div class="navs cf">
