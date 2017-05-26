@@ -5,6 +5,7 @@
 
 	// Custom Variables
   $lesson_number = 123;
+  $my_name = 'Joseph Choi';
 
 	// Moustache Array
 	$moustaches = array('Handlebar', 'Salvador Dali', 'Foo Man Chu');
@@ -50,7 +51,7 @@
 
 			<hr>
 
-			<small>&copy;<!-- YEAR --> - <!-- YOUR NAME --></small>
+			<small>&copy;<?php echo date('Y'); ?> - <?php echo "$my_name"; ?></small>
 		</div><!-- end wrapper -->
 
 		<div class="copyright-info">
